@@ -3,7 +3,7 @@
   "description": "Vue Plugin for Global Loading Management",
   "version": "1.5.3",
   "license": "MIT",
-  "author": "Fatih Kadir Akın <fatihkadirakin@gmail.com>",
+  "author": "RIP: Fatih Kadir Akın <fatihkadirakin@gmail.com>",
   "keywords": [
     "vue",
     "vuex",
@@ -12,10 +12,10 @@
     "loading",
     "loader"
   ],
-  "homepage": "https://github.com/f/vue-wait#readme",
+  "homepage": "https://github.com/xtrasmal/vue-wait#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/f/vue-wait.git"
+    "url": "git+https://github.com/xtrasmal/vue-wait.git"
   },
   "bugs": {
     "url": "https://github.com/f/vue-wait/issues"
@@ -29,24 +29,8 @@
   ],
   "scripts": {
     "test": "exit 0;",
-    "precommit": "lint-staged",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "bundle": "npm run build; npm run build -- --env=v3",
-    "dev-transition": "poi examples/transition-example/index.js",
-    "dev-vuex": "poi examples/vuex-example/index.js",
-    "dev-vue": "poi examples/vue-example/index.js",
-    "dev-wrap": "poi examples/wrap-example/index.js",
-    "build-gh-pages": "poi build --out-dir=/tmp/gh-pages examples/vuex-example/index.js"
-  },
-  "lint-staged": {
-    "src/**/*.js": [
-      "prettier --single-quote --write",
-      "git add"
-    ],
-    "examples/**/*.js": [
-      "prettier --single-quote --write",
-      "git add"
-    ]
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
@@ -60,9 +44,6 @@
     "escape-string-regexp": "^1.0.5",
     "eslint": "^4.2.0",
     "husky": "^0.14.3",
-    "lint-staged": "^7.1.3",
-    "poi": "^10.2.3",
-    "prettier": "^1.1.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^16.3.3",
