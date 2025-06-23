@@ -30,7 +30,7 @@
   "scripts": {
     "test": "exit 0;",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "bundle": "npm run build; npm run build -- --env=v3",
+    "bundle": "npm run build; npm run build -- --env=v3"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
